@@ -163,12 +163,12 @@ export default {
             console.log(((this.fromYear + this.toYear) / 2))
             const p = (currentYear - ((this.fromYear + this.toYear) / 2)).toFixed(3)
             console.log(Math.pow(1.2, p))
-            score = (0.03 * Math.pow(1.2, p) * this.price)
+            score = (0.03 * Math.pow(1.2, p) * this.price) * 2.79769559
             console.log(score)
             this.result = {
                 z,
                 score,
-                price: this.price * z,
+                price: ((this.price * z) * 1.00396865),
             };
         },
         clear() {
